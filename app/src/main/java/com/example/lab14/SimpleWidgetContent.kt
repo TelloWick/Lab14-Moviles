@@ -73,10 +73,19 @@ class SimpleWidgetContent : GlanceAppWidget() {
 
                 Button(
 
-                    text = "Página Principal",
+                    text = "Home",
 
                     onClick =
                         actionStartActivity<MainActivity>()
+
+                )
+
+                Button(
+
+                    text = "Work",
+
+                    onClick =
+                        actionStartActivity<WorkActivity>()
 
                 )
 
