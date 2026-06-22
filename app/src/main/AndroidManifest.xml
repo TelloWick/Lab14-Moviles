@@ -25,6 +25,19 @@
         <activity
             android:name=".WorkActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ClientesActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".MembresiasActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AsistenciaActivity"
+            android:exported="false"/>
+
         <receiver
             android:name=".SimpleWidget"
             android:exported="true">
