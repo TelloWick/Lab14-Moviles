@@ -37,6 +37,7 @@ class SimpleWidgetContent : GlanceAppWidget() {
 
     }
 
+
     @Composable
     private fun MyContent() {
 
@@ -57,39 +58,39 @@ class SimpleWidgetContent : GlanceAppWidget() {
 
             Text(
 
-                text = "¿A dónde quieres dirigirte?",
+                text = "🏋️ Sistema Gimnasio",
 
                 modifier =
                     GlanceModifier.padding(12.dp)
 
             )
 
-            Row(
+            Button(
 
-                horizontalAlignment =
-                    Alignment.CenterHorizontally
+                text = "👤 Clientes",
 
-            ) {
+                onClick =
+                    actionStartActivity<ClientesActivity>()
 
-                Button(
+            )
 
-                    text = "Home",
+            Button(
 
-                    onClick =
-                        actionStartActivity<MainActivity>()
+                text = "💳 Membresías",
 
-                )
+                onClick =
+                    actionStartActivity<MembresiasActivity>()
 
-                Button(
+            )
 
-                    text = "Work",
+            Button(
 
-                    onClick =
-                        actionStartActivity<WorkActivity>()
+                text = "📅 Asistencia",
 
-                )
+                onClick =
+                    actionStartActivity<AsistenciaActivity>()
 
-            }
+            )
 
         }
 
